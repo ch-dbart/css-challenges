@@ -1,0 +1,20 @@
+<!doctype html>
+
+<link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Upside Down</title>
+
+<style>
+.box {
+    &::before {
+        content: 'Hello';
+    }
+    &::after {
+        content: 'World';
+        transform: scale(1,-1);
+    }
+}
+</style>
+
+<div class="box"></div>

@@ -1,0 +1,26 @@
+<!doctype html>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Hello World, again?</title>
+
+<style>
+.box {
+    width: 280px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inconsolata', monospace;
+    font-size: 28px;
+    border: 1px solid #c39f76;
+    box-sizing: border-box;
+
+    &:before {
+        content: 'Hello World';
+        flex: 0;
+    }
+}
+</style>
+
+<div class="box"></div>

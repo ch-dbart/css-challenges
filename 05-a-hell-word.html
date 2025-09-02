@@ -1,0 +1,25 @@
+<!doctype html>
+
+<link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>A Hell Word</title>
+
+<style>
+.box {
+    position: relative;
+    &::before {
+        content: 'Hello World';
+    }
+    &::after {
+        color: #c39f76;
+        content: '    o    l ';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        white-space: pre;
+    }
+}
+</style>
+
+<div class="box"></div>

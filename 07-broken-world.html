@@ -1,0 +1,27 @@
+<!doctype html>
+
+<link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Broken World</title>
+
+<style>
+.box {
+    &::before {
+        content: 'Hello World';
+    }
+    &::after {
+        content: 'Hello World';
+        position: absolute;
+        transform: translate(-3px, -10px);
+        overflow: hidden;
+        height: 18px;
+        z-index: 2;
+        background: white;
+        padding: 0 10px;
+        text-decoration: line-through white;
+    }
+}
+</style>
+
+<div class="box"></div>
